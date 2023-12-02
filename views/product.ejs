@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div id="main">
+          <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main">
+
+      <nav class="navbar navbar-dark bg-dark">
+        <img style="padding-left: 1vw; height: 2.5vw; width: 8vw" src="/images/amzLogo.png"  class="card-img-top" alt="...">
+        <form class="d-flex" role="search">
+          <span class="input-group-text" id="addon-wrapping">All</span>
+          <input id="myInput" type="text" class="form-control" style="width: 60vw;" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping" onkeyup="search()" autofocus>
+          <!-- <button type="button" class="btn btn-primary"><i class="ri-mic-line" id="micBtn" onclick="voice()"></i></button> -->
+          <button type="button" class="btn btn-light"><img style="width: 1.5vw" src="https://i.pinimg.com/originals/ea/5f/5b/ea5f5bd3b4110f2afb958049b4096d3a.png" alt="" id="micBtn" onclick="voice()"></button>
+        </form>
+        <a href="/product"><img id="shopingImg" src="/images/shopingLogo.png" alt=""></a>
+        <a href="/login"><i class="ri-account-circle-line" style="color: #fff; font-size: 2.5vw; padding-right: 2vw;"></i></a>
+      </nav>
+      <div class="nav nav-dark bg-dark">
+        <i class="ri-menu-2-line"></i>
+        <a href="/"><h5>All</h5></a>
+        <h5>Today's Deals</h5>
+        <h5>Customers Service</h5>
+        <h5>Registry</h5>
+        <h5>Gift Cards</h5>
+        <h5>Sell</h5>
+    </div>
+
+        <div class="products">
+          <% data.reverse().forEach(function(acc){ %>
+            <div class="ProductMain">
+              <div class="product">
+                <img src="<%= acc.productPic %>" alt="">
+              </div>
+                   <div class="multiproduct">
+                    <h1>Product Name : <%= acc.productname  %></h1>
+                    <h1>Product Price : <%= acc.price  %></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quisquam accusantium officiis ut maxime hic impedit amet! Numquam dicta ipsa aut eligendi maxime? Facere animi illum in, cupiditate possimus reiciendis aliquam similique maxime repudiandae laboriosam!</p>
+                   </div>
+                   <div class="addCards">
+                    <h3>To buy, select Size</h3>
+                    <button id="btn">Add to Card</button>
+                    <a href="/product/<%= acc.product_id %>"><button>Add to List</button></a>
+                   </div>
+                   <a href="/delete/<%= acc._id %>">Delete</a>
+            </div>
+          <% }) %>
+          <a href="/cards">Add Products</a>
+      </div>
+
+
+    
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/javascripts/test.js"></script>
+  </body>
+</html>
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  /* overflow: hidden; */
+  height: 100vh;
+  width: 100%;
+}
+.scroll{
+  height: 100vh;
+  width: 100vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#mid {
+  height: 15vw;
+  width: 20vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#register {
+  display: flex;
+  height: 40vw;
+  width: 80vw;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav {
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 98.9vw;
+  height: 2vw;
+  justify-content: space-between;
+  padding-left: 1vw;
+  padding-right: 50vw;
+}
+
+.nav h5 {
+  font-size: 1vw;
+}
+
+.nav i {
+  font-size: 1vw;
+}
+
+.nav h5:hover,
+i:hover {
+  cursor: pointer;
+  border: solid .1vw white;
+}
+
+#shopingImg {
+  height: 4vw;
+  width: 6vw;
+  color: #fff;
+}
+
+.cardnav {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 98.9vw;
+  height: 16vw;
+  z-index: 99;
+}
+
+.cardnav::-webkit-scrollbar {
+  display: none;
+}
+
+.cardnav img {
+  pointer-events: none;
+  width: 100%;
+}
+
+.iccon {
+  top: 7vw;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 98.9vw;
+  flex-direction: row;
+  align-items: center;
+  font-size: 5vw;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.721);
+  height: 15vw;
+  cursor: pointer;
+}
+
+.cards {
+  flex-flow: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  min-height: 25vw;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2vw;
+  user-select: none;
+  background-color: rgba(167, 164, 164, 0.265);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  height: 23vw;
+  width: 23vw;
+  background-color: #fff;
+}
+
+.card img {
+  pointer-events: none;
+}
+
+.card h3 {
+  font-size: 1.3vw;
+}
+
+.card a {
+  font-size: 1.1vw;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: red;
+}
+
+.card img {
+  height: 15vw;
+  width: 20vw;
+}
+
+#photoform {
+  display: none;
+}
+
+.ProductMain {
+  display: flex;
+  width: 95vw;
+}
+
+.products {
+  height: 40vw;
+  width: 99vw;
+  padding: 0 2vw;
+}
+
+.product {
+  margin-top: 2vw;
+  height: 20vw;
+  width: 30vw;
+}
+
+.product img {
+  pointer-events: none;
+  height: 20vw;
+  width: 25vw;
+}
+
+.multiproduct {
+  margin-top: 2vw;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  width: 40vw;
+  height: 20vw;
+  font-size: 1vw;
+}
+
+.multiproduct h1 {
+  font-size: 2.3vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+.addCards {
+  margin-top: 5vw;
+  margin-left: 2vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 15vw;
+  padding: 2vw;
+  width: 20vw;
+  border: solid .1vw gray;
+  border-radius: 1vw;
+  font-size: 1vw;
+}
+
+.addCards h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.addCards button {
+  padding: .3vw 3vw;
+  background-color: rgb(255, 222, 9);
+  border: none;
+  border-radius: 1vw;
+}
